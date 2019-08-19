@@ -1,0 +1,5 @@
+<form Method="POST" action=".">
+    {% csrf_token%}
+    {{ form.as_p }}
+    <input type="submit" name="Tạo">
+</form>
