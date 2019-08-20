@@ -25,7 +25,7 @@ SECRET_KEY = 'f$%bc2)x9_#s4(k$*_e=kb0##tl*%qxwj^w&p&9m3!e#!3%n5g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "113.161.225.252", "127.0.0.1", "192.168.1.8", ]
 
 AUTH_USER_MODEL = 'accounts.MyUser'
 
@@ -53,6 +53,35 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+
+CORS_ORIGIN_WHITELIST = [
+    "http://192.168.137.169:8080",
+    "http://localhost:8080",
+    "http://127.0.0.1:8000"
+]
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
 
 ROOT_URLCONF = 'customusermodel.urls'
 
