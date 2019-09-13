@@ -7,7 +7,7 @@ from django.core.validators import RegexValidator
 USERNAME_REGEX = '^[a-zA-Z0-9.+-]*$'
 
 class MyUserManager(BaseUserManager):
-    def create_user(self, username, email, ngaysinh, diachi, gioitinh, password, **extra_fields):
+    def create_user(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password, **extra_fields):
         if not email:
             raise ValueError('Tài khoản phải có địa chỉ email')
         user = self.model(
@@ -16,6 +16,9 @@ class MyUserManager(BaseUserManager):
             ngaysinh=ngaysinh,
             diachi=diachi,
             gioitinh=gioitinh,
+            phone=phone,
+            firstname=firstname,
+            lastname=lastname,
             **extra_fields
         )
         extra_fields.setdefault('is_active', True)
@@ -23,11 +26,11 @@ class MyUserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, username, email, ngaysinh, diachi, gioitinh, password, **extra_fields):
+    def create_superuser(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password, **extra_fields):
         extra_fields.setdefault('is_admin', True)
         extra_fields.setdefault('is_staff', True)
         return self.create_user(
-            username, email, ngaysinh, diachi, gioitinh, password=password, **extra_fields
+            username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password=password, **extra_fields
         )
 
 class MyUser(AbstractBaseUser):
@@ -53,11 +56,17 @@ class MyUser(AbstractBaseUser):
     ngaysinh = models.DateField(null=True)
     diachi = models.CharField(max_length=300, null=True)
     noti_token = models.CharField(max_length=300, null=True)
+    firstname = models.CharField(max_length=255, null=True)
+    lastname = models.CharField(max_length=255, null=True)
+    middlename = models.CharField(max_length=255, null=True)
+    last_login = models.DateTimeField(blank=True, null=True)
+    phone = models.CharField(max_length=10, null=True)
 
     objects = MyUserManager()
 
     USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['email', 'ngaysinh', 'gioitinh', 'diachi', 'is_admin', 'is_active']
+    REQUIRED_FIELDS = ['email', 'ngaysinh', 'gioitinh', 'diachi',
+                       'is_admin', 'is_active', 'phone', 'firstname', 'lastname']
 
     def __str__(self):
         return self.username
