@@ -1,0 +1,16 @@
+django==2.1
+bcrypt
+cffi==1.12.3
+coverage
+djangorestframework
+markdown
+django-filter
+django-pyodbc-azure
+django-cors-headers
+django-token
+pycparser
+pyodbc
+pytz==2019.1
+setuptools==39.1.0
+six==1.12.0
+sqlparse
