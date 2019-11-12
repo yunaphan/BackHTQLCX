@@ -11,7 +11,7 @@ class UserAdmin(BaseUserAdmin):
     list_filter = ('is_admin', 'is_active')
     fieldsets = (
         (None, {'fields': ('username', 'email', 'password', 'gioitinh', 'diachi', 'ngaysinh')}),
-        ('Permissions', {'fields': ('is_admin', 'is_active', 'is_staff')})
+        ('Permissions', {'fields': ('is_admin', 'is_active', 'is_staff', 'is_employee', 'is_manager')})
     )
     search_fields = ('username', 'email')
     ordering = ('username', 'email')

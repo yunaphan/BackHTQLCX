@@ -5,7 +5,7 @@ import bcrypt
 User = get_user_model()
 
 class UserCreationSerializer(serializers.ModelSerializer):
-    password2 =serializers.CharField(read_only=True)
+    password2 = serializers.CharField(read_only=True)
     noti_token = serializers.CharField(max_length=255, allow_null=True, allow_blank=True)
     middlename = serializers.CharField(max_length=255, allow_null=True, allow_blank=True)
 
@@ -13,13 +13,14 @@ class UserCreationSerializer(serializers.ModelSerializer):
         model = User
         fields = ['username', 'gioitinh', 'ngaysinh', 'diachi', 'email',
                   'password', 'password2', 'noti_token', 'is_admin', 'is_staff',
-                  'is_active', 'phone', 'firstname', 'lastname', 'middlename']
+                  'is_active', 'is_employee', 'is_manager', 'phone', 'firstname', 'lastname', 'middlename']
 
     def create(self, validated_data):
         algorithm = "bcrypt"
         digest = None
         library = ("bcrypt", "bcrypt")
         rounds = 10
+        username = validated_data["username"]
         password = validated_data["password"].encode('utf8')
         validated_data["password"] = algorithm + '$' + bcrypt.hashpw(password, bcrypt.gensalt(10)).decode()
         return User.objects.create(**validated_data)

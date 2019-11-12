@@ -1,19 +1,22 @@
 from rest_framework.views import APIView
-from .forms import UserCreationForm, UserLoginFroms
 from django.contrib.auth import login, logout, get_user_model
-from rest_framework import viewsets, response, status
-from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework import viewsets, response, status, permissions
+from rest_framework.permissions import *
+from rest_framework.generics import ListCreateAPIView
 from rest_framework.authtoken.models import Token
+from accounts.permissions import IsAdmin
 from . import serializers
 from .serializers import UserCreationSerializer, LoginSerializer
 User = get_user_model()
 
-class RegisterView(viewsets.GenericViewSet, ListCreateAPIView, RetrieveUpdateDestroyAPIView):
+class RegisterView(viewsets.ModelViewSet):
+    permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = UserCreationSerializer
     queryset = User.objects.all()
     lookup_field = 'username'
 
 class LoginView(APIView):
+    permission_classes = (AllowAny,)
     def get_queryset(self):
         return User.objects.all()
     def post(self, request):

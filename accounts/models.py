@@ -7,7 +7,7 @@ from django.core.validators import RegexValidator
 USERNAME_REGEX = '^[a-zA-Z0-9.+-]*$'
 
 class MyUserManager(BaseUserManager):
-    def create_user(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password, **extra_fields):
+    def create_user(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, is_employee, is_manager, password, **extra_fields):
         if not email:
             raise ValueError('Tài khoản phải có địa chỉ email')
         user = self.model(
@@ -19,19 +19,42 @@ class MyUserManager(BaseUserManager):
             phone=phone,
             firstname=firstname,
             lastname=lastname,
+            is_employee=is_employee,
+            is_manager=is_manager,
             **extra_fields
         )
         extra_fields.setdefault('is_active', True)
+        # extra_fields.setdefault('is_employee', False)
+        # extra_fields.setdefault('is_manager', False)
+        extra_fields.setdefault('is_admin', False)
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password, **extra_fields):
+    # def create_employee(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password, **extra_fields):
+    #     extra_fields.setdefault('is_active', True)
+    #     extra_fields.setdefault('is_employee', True)
+    #     extra_fields.setdefault('is_manager', False)
+    #     extra_fields.setdefault('is_admin', False)
+    #     return self.create_user(
+    #         username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password=password, **extra_fields)
+    #
+    # def create_manager(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password, **extra_fields):
+    #     extra_fields.setdefault('is_active', True)
+    #     extra_fields.setdefault('is_employee', False)
+    #     extra_fields.setdefault('is_manager', True)
+    #     extra_fields.setdefault('is_admin', False)
+    #     return self.create_user(
+    #         username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password=password, **extra_fields)
+
+    def create_superuser(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, is_employee, is_manager, password, **extra_fields):
         extra_fields.setdefault('is_admin', True)
+        # extra_fields.setdefault('is_employee', False)
+        # extra_fields.setdefault('is_manager', False)
+        extra_fields.setdefault('is_active', True)
         extra_fields.setdefault('is_staff', True)
         return self.create_user(
-            username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password=password, **extra_fields
-        )
+            username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname,  is_employee, is_manager, password=password, **extra_fields)
 
 class MyUser(AbstractBaseUser):
     username = models.CharField(
@@ -43,13 +66,15 @@ class MyUser(AbstractBaseUser):
                                 )],
                     unique=True
                 )
-    password = models.CharField('password', max_length=128)
+    # password = models.CharField('password', max_length=128)
     email = models.EmailField(
                 max_length=255,
                 unique=True,
                 verbose_name='email address'
         )
     is_admin = models.BooleanField(default=False)
+    is_manager = models.BooleanField(default=False)
+    is_employee = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     gioitinh = models.CharField(max_length=10, null=True)
@@ -66,7 +91,8 @@ class MyUser(AbstractBaseUser):
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email', 'ngaysinh', 'gioitinh', 'diachi',
-                       'is_admin', 'is_active', 'phone', 'firstname', 'lastname']
+                       'is_admin', 'is_active', 'is_employee', 'is_manager',
+                       'phone', 'firstname', 'lastname']
 
     def __str__(self):
         return self.username

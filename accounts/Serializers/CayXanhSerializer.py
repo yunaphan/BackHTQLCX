@@ -7,4 +7,4 @@ class CayXanhserializer(serializers.ModelSerializer):
         model = Cayxanh
         fields = ('objectid', 'sohieu', 'matencx', 'kinhdo', 'vido', 'duongkinh',
                   'chieucao', 'dorongtan', 'ngaytrong', 'ngaycapnhat', 'thuoctinh',
-                  'ghichu', 'matinhtrang', 'tuyenduong', 'nguoicapnhat' )
+                  'ghichu', 'matinhtrang', 'tuyenduong', 'nguoicapnhat')
