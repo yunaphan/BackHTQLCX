@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
+    'accounts.apps.AccountsConfig',
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
@@ -115,7 +115,7 @@ WSGI_APPLICATION = 'customusermodel.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'AccountsV2',
+        'NAME': 'Accounts',
         'USER': 'sa',
         'PASSWORD': 'Vnpttg@2011',
         'HOST': '113.161.225.252\MSSQL11',
@@ -205,4 +205,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 

@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.views.decorators.csrf import csrf_exempt
+from rest_framework.urlpatterns import format_suffix_patterns
 from accounts.views import (
     LogoutView, LoginView,
     RegisterView, Tokenuser
@@ -8,9 +9,11 @@ from accounts.views import (
 from accounts.Api import (
     CayXanhApi, TenCXApi, TrangThaiCXApi,
     HinhThucThiCongApi, QuanHuyenPhuongXaApi,
-    DuongApi
+    DuongApi, HinhAnhCayXanhApi
 )
 from accounts.Api.admin import (ThongTinNguoiDungTheoToken)
+from django.conf import settings
+from django.conf.urls.static import static
 from rest_framework import routers
 router = routers.DefaultRouter()
 
@@ -23,11 +26,18 @@ router.register(r'hinh-thuc-thi-cong', HinhThucThiCongApi.HinhThucThiCongView, b
 router.register(r'danh-muc-quan-huyen', QuanHuyenPhuongXaApi.QuanHuyenView, base_name='Danh mục quận huyện')
 router.register(r'danh-muc-phuong-xa', QuanHuyenPhuongXaApi.PhuongxaView, base_name='Danh mục phường xã')
 router.register(r'danh-muc-tuyen-duong', DuongApi.DuongView, base_name='Danh mục tuyến đường')
+# router.register(r'hinh-anh-cay', HinhAnhCayXanhApi.HinhAnhCayXanhView.as_view(), base_name='Hình ảnh của cây xanh')
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('login/', csrf_exempt(LoginView.as_view()), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
     path('infomations-by-token/', ThongTinNguoiDungTheoToken.InformationsByToken.as_view(), name='Thông tin người dùng từ token'),
     path('', include(router.urls)),
+    path('hinh-anh-cay/', HinhAnhCayXanhApi.HinhAnhCayXanhView.as_view(), name="hình ảnh cây"),
 ]
+
+# urlpatterns = format_suffix_patterns(urlpatterns)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

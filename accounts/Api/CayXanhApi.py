@@ -2,7 +2,6 @@ from rest_framework import viewsets
 from rest_framework.generics import ListAPIView
 from accounts.Serializers.CayXanhSerializer import CayXanhserializer
 from accounts.Models.CayXanhModel import Cayxanh
-from accounts.Models.TenCXModel import Tencx
 from rest_framework import permissions
 from accounts.permissions import IsAdmin
 

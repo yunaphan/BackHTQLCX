@@ -7,6 +7,8 @@ from django.core.validators import RegexValidator
 USERNAME_REGEX = '^[a-zA-Z0-9.+-]*$'
 
 class MyUserManager(BaseUserManager):
+    use_in_migrations = True
+
     def create_user(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, is_employee, is_manager, password, **extra_fields):
         if not email:
             raise ValueError('Tài khoản phải có địa chỉ email')
@@ -85,6 +87,7 @@ class MyUser(AbstractBaseUser):
     lastname = models.CharField(max_length=255, null=True)
     middlename = models.CharField(max_length=255, null=True)
     last_login = models.DateTimeField(blank=True, null=True)
+    duongdanavatar = models.ImageField(upload_to='avatar', blank=True, null=True)
     phone = models.CharField(max_length=10, null=True)
 
     objects = MyUserManager()
@@ -92,7 +95,7 @@ class MyUser(AbstractBaseUser):
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email', 'ngaysinh', 'gioitinh', 'diachi',
                        'is_admin', 'is_active', 'is_employee', 'is_manager',
-                       'phone', 'firstname', 'lastname']
+                       'phone', 'firstname', 'lastname', 'duongdanavatar']
 
     def __str__(self):
         return self.username

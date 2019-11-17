@@ -28,6 +28,7 @@ class LoginView(APIView):
         return response.Response({'key': token.key}, status=status.HTTP_202_ACCEPTED)
 
 class LogoutView(APIView):
+    permission_classes = (AllowAny,)
     def get_queryset(self):
         return User.objects.all()
     def post(self, request):
@@ -35,5 +36,7 @@ class LogoutView(APIView):
         return response.Response(status=status.HTTP_200_OK)
 
 class Tokenuser(viewsets.GenericViewSet, ListCreateAPIView):
+    permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = serializers.TokenSerializer
     queryset = Token.objects.all()
+

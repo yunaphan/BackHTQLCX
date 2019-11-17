@@ -2,27 +2,272 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6796efdf-3ec9-492b-8ca8-cb55fe23d94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/accounts/Models/HinhAnhCX.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/Models/ChiTietThiCongCayXanh.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/Models/TrangThaiTCModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/Api/CayXanhApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/CayXanhApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Api/DuongApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/DuongApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Api/HinhThucThiCongApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/HinhThucThiCongApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Api/QuanHuyenPhuongXaApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/QuanHuyenPhuongXaApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Api/TenCXApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/TenCXApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Api/TrangThaiCXApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/TrangThaiCXApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Models/CayXanhModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Models/CayXanhModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/Api/admin/ThongTinNguoiDungTheoToken.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/admin/ThongTinNguoiDungTheoToken.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/Models/HinhAnhCX.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0002_myuser_is_staff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0003_auto_20190724_0850.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0004_myuser_noti_token.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0005_myuser_is_active.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0006_cayxanh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0007_tencx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0008_trangthaicx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0009_hinhthucthicong_phuongxa_quanhuyen_timduong.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0010_auto_20190913_1007.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0011_myuser_phone.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0012_auto_20191111_1655.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0013_auto_20191111_1656.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0014_auto_20191111_1716.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0015_auto_20191112_1713.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0016_auto_20191112_2107.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customusermodel/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/customusermodel/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customusermodel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/customusermodel/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.1.10.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.1.10.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.1.10.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.1.10.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.1.10.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.1.10.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.1.10.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.1.10.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.1.10.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/global_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/global_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ar/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ar/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/az/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/az/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/az/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/az/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/az/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/az/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/bg/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/bg/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/bn/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/bn/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/br/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/br/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/br/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/br/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/bs/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/bs/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ca/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ca/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/cs/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/cs/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/cy/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/cy/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/da/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/da/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/de/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/de/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/de/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/de/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/de/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/de/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/de_CH/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/de_CH/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/el/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/el/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/el/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/el/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/el/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/el/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/en/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/en/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/en_AU/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/en_AU/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/en_GB/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/en_GB/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/eo/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/eo/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/es/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/es/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/es_AR/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/es_AR/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/et/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/et/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/eu/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/eu/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/eu/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/eu/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/eu/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/eu/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/fa/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/fa/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/fi/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/fi/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/fr/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/fr/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/fy/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/fy/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ga/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ga/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/gd/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/gd/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/gl/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/gl/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/he/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/he/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/hi/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/hi/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/hr/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/hr/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/hu/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/hu/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/id/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/id/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/is/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/is/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/it/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/it/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ja/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ja/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ka/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ka/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/km/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/km/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/kn/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/kn/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ko/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ko/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/lt/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/lt/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/lv/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/lv/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/mk/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/mk/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ml/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ml/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/mn/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/mn/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/nb/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/nb/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ne/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ne/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ne/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ne/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/nl/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/nl/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/nn/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/nn/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/pl/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/pl/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/pl/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/pl/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/pl/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/pl/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/pt/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/pt/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/pt_BR/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/pt_BR/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ro/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ro/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ru/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ru/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sk/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sk/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sk/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sk/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sl/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sl/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sq/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sq/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sr/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sr/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sr_Latn/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sr_Latn/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sv/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/sv/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ta/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/ta/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/te/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/te/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/th/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/th/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/tr/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/tr/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/uk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/uk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/uk/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/uk/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/uk/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/uk/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/vi/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/vi/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/zh_Hans/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/zh_Hans/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/zh_Hans/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/zh_Hans/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/zh_Hans/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/zh_Hans/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/zh_Hant/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/conf/locale/zh_Hant/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/az/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/az/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/az/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/az/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/ca/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/ca/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/ca/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/ca/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/el/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/el/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/el/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/el/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/eu/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/eu/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/eu/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/eu/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/lt/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/lt/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/lt/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/lt/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/uk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/uk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/uk/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/uk/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/zh_Hans/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/zh_Hans/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/zh_Hans/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/locale/zh_Hans/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/options.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/img/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/img/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/SelectBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/SelectBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/cancel.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/cancel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/inlines.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/inlines.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/urlify.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/urlify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templates/admin/widgets/url.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templates/admin/widgets/url.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/common-passwords.txt.gz" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/common-passwords.txt.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/da/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/da/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/da/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/da/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/el/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/el/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/el/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/el/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/password_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/password_validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/db/backends/postgis/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/db/backends/postgis/const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/db/backends/postgis/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/db/backends/postgis/operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/datasource.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/datasource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/envelope.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/envelope.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/feature.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/field.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/geometries.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/geometries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/layer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/prototypes/raster.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/prototypes/raster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/raster/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/raster/const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/prototypes/io.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/prototypes/io.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/static/gis/js/OLMapWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/static/gis/js/OLMapWidget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/utils/ogrinspect.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/utils/ogrinspect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/az/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/az/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/az/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/az/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/br/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/br/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/br/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/br/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/ca/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/ca/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/ca/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/ca/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/de/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/de/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/de/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/de/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/el/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/el/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/el/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/el/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/eu/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/eu/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/eu/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/eu/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/sk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/sk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/sk/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/sk/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/uk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/uk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/uk/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/locale/uk/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/az/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/az/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/de/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/de/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/de/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/de/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/el/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/el/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/el/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/el/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/eu/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/eu/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/eu/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/eu/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/sk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/sk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/sk/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/sk/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/uk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/uk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/uk/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/postgres/locale/uk/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/sitemaps/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/sitemaps/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/files/locks.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/files/locks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/files/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/files/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/files/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/files/temp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/handlers/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/handlers/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/shell.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/shell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/serializers/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/serializers/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/serializers/pyyaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/serializers/pyyaml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/serializers/xml_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/serializers/xml_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/servers/basehttp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/servers/basehttp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/signing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/signing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/base/features.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/base/features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/base/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/base/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/mysql/creation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/mysql/creation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/mysql/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/mysql/operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/oracle/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/oracle/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/oracle/compiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/oracle/features.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/oracle/features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/oracle/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/oracle/operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/postgresql/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/postgresql/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/postgresql/creation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/postgresql/creation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/sqlite3/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/sqlite3/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/sqlite3/creation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/sqlite3/creation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/sqlite3/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/backends/sqlite3/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/migrations/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/migrations/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/migrations/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/migrations/loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/migrations/operations/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/migrations/operations/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/migrations/operations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/migrations/operations/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/migrations/questioner.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/migrations/questioner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/sql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/sql/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/sql/compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/sql/compiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/sql/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/sql/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/sql/where.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/sql/where.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/dispatch/dispatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/dispatch/dispatcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/forms/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/forms/fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/http/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/http/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/http/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/http/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/defaultfilters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/defaultfilters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/defaulttags.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/defaulttags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/test/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/test/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/test/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/test/runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/test/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/test/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/autoreload.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/autoreload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/datastructures.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/datastructures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/feedgenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/feedgenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/hashable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/html.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/html.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/module_loading.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/module_loading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/numberformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/numberformat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/timesince.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/timesince.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/timezone.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/timezone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/xmlutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/utils/xmlutils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/views/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/views/debug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/views/defaults.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/views/defaults.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Scripts/django-admin.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/django-admin.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,43 +280,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/Api/HinhThucThiCongApi.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/Api/QuanHuyenPhuongXaApi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="63" />
+            <state relative-caret-position="253">
+              <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/Api/TenCXApi.py">
+        <entry file="file://$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="207">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#75#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/accounts/Api/TrangThaiCXApi.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="207">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customusermodel/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/migrations/0001_initial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3542">
+              <caret line="156" column="99" selection-start-line="156" selection-start-column="99" selection-end-line="156" selection-end-column="99" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1196">
+              <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,6 +374,8 @@
       <find>PASSWORD_HASH</find>
       <find>databas</find>
       <find>static_root</find>
+      <find>HINHANHCAYXANH</find>
+      <find>data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,19 +402,9 @@
         <option value="$PROJECT_DIR$/accounts/Serializers/DuongSerializer.py" />
         <option value="$PROJECT_DIR$/accounts/Api/admin/thongtinnguoidungtheotoken.py" />
         <option value="$PROJECT_DIR$/accounts/Api/admin/searchCayXanh.py" />
-        <option value="$PROJECT_DIR$/accounts/Api/admin/ThongTinNguoiDungTheoToken.py" />
         <option value="$PROJECT_DIR$/accounts/permistion.py" />
         <option value="$PROJECT_DIR$/accounts/Models/hinhanh.py" />
-        <option value="$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py" />
-        <option value="$PROJECT_DIR$/accounts/Models/HinhAnhCX.py" />
-        <option value="$PROJECT_DIR$/customusermodel/settings.py" />
-        <option value="$PROJECT_DIR$/accounts/admin.py" />
-        <option value="$PROJECT_DIR$/accounts/serializers.py" />
-        <option value="$PROJECT_DIR$/customusermodel/urls.py" />
-        <option value="$PROJECT_DIR$/accounts/models.py" />
-        <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/accounts/permissions.py" />
-        <option value="$PROJECT_DIR$/accounts/Api/CayXanhApi.py" />
         <option value="$PROJECT_DIR$/accounts/Models/CayXanhModel.py" />
         <option value="$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py" />
         <option value="$PROJECT_DIR$/accounts/Api/DuongApi.py" />
@@ -139,6 +412,22 @@
         <option value="$PROJECT_DIR$/accounts/Api/QuanHuyenPhuongXaApi.py" />
         <option value="$PROJECT_DIR$/accounts/Api/TenCXApi.py" />
         <option value="$PROJECT_DIR$/accounts/Api/TrangThaiCXApi.py" />
+        <option value="$PROJECT_DIR$/accounts/serializers.py" />
+        <option value="$PROJECT_DIR$/accounts/views.py" />
+        <option value="$PROJECT_DIR$/accounts/Api/admin/ThongTinNguoiDungTheoToken.py" />
+        <option value="$PROJECT_DIR$/accounts/Serializers/HinhAnhCayXanh.py" />
+        <option value="$PROJECT_DIR$/accounts/Api/CayXanhApi.py" />
+        <option value="$PROJECT_DIR$/accounts/Models/HinhAnhCX.py" />
+        <option value="$PROJECT_DIR$/accounts/Models/TrangThaiTCModel.py" />
+        <option value="$PROJECT_DIR$/accounts/Models/ChiTietThiCongCayXanh.py" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/customusermodel/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/admin.py" />
+        <option value="$PROJECT_DIR$/customusermodel/settings.py" />
+        <option value="$PROJECT_DIR$/accounts/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py" />
+        <option value="$PROJECT_DIR$/accounts/Models/HinhAnhCXModel.py" />
+        <option value="$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py" />
       </list>
     </option>
   </component>
@@ -154,7 +443,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,24 +458,13 @@
             <path>
               <item name="customusermodel" type="b2602c69:ProjectViewProjectNode" />
               <item name="customusermodel" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customusermodel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customusermodel" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-              <item name="Serializers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customusermodel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customusermodel" type="462c0819:PsiDirectoryNode" />
-              <item name="customusermodel" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,6 +473,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/softwaredevelopmentproject-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -307,16 +585,30 @@
       <workItem from="1573536695739" duration="4469000" />
       <workItem from="1573555979780" duration="13000" />
       <workItem from="1573566168294" duration="7958000" />
+      <workItem from="1573577973578" duration="2302000" />
+      <workItem from="1573624773135" duration="7343000" />
+      <workItem from="1573648301566" duration="3928000" />
+      <workItem from="1573700353533" duration="874000" />
+      <workItem from="1573706718758" duration="3575000" />
+      <workItem from="1573716019574" duration="5136000" />
+      <workItem from="1573725480392" duration="1401000" />
+      <workItem from="1573737668926" duration="10237000" />
+      <workItem from="1573750600684" duration="55000" />
+      <workItem from="1573753072653" duration="3764000" />
+      <workItem from="1573886766563" duration="9186000" />
+      <workItem from="1573896349393" duration="4975000" />
+      <workItem from="1573912477405" duration="11859000" />
+      <workItem from="1573970479734" duration="1790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178952000" />
+    <option name="totallyTimeSpent" value="245377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22919819" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28366113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -330,7 +622,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30598292" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.42735043" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32991454" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -339,7 +631,7 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22919819" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27912253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -353,7 +645,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21880342" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3982906" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32991454" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -377,166 +669,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/accounts/Serializers/QuanHuyenPhuongXaSeria.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" column="69" lean-forward="true" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Models/QuanHuyenPhuongXaModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-262">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ubg/Api_ubg/Api/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/authentication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="167" column="7" lean-forward="true" selection-start-line="167" selection-start-column="7" selection-end-line="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-870">
-          <caret line="94" column="27" lean-forward="true" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/handlers/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../djangox1/djangox1_1/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="75" column="50" lean-forward="true" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customusermodel/dbrouters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.724/urls.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.313/urls.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="1010" column="23" selection-start-line="1010" selection-start-column="23" selection-end-line="1010" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/authtoken/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Serializers/DuongSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ubg/ubg/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="48" column="77" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Api/admin/ThongTinNguoiDungTheoToken.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/permistion.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="328" column="31" lean-forward="true" selection-start-line="328" selection-start-column="31" selection-end-line="328" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Models/HinhThucThiCongModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Models/TenCXModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -561,16 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/relations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="70" column="68" lean-forward="true" selection-start-line="68" selection-start-column="4" selection-end-line="70" selection-end-column="68" />
-          <folding>
-            <element signature="e#9181#14916#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2940">
@@ -586,122 +712,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/Models/hinhanh.py" />
-    <entry file="file://$PROJECT_DIR$/accounts/Models/HinhAnhCX.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customusermodel/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="205" column="28" selection-start-line="205" selection-end-line="206" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368">
-          <caret line="56" column="110" selection-start-line="56" selection-start-column="110" selection-end-line="56" selection-end-column="110" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="139" column="17" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Api/admin/searchCayXanh.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customusermodel/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Models/CayXanhModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Api/admin/searchCayXanh.py" />
     <entry file="file://$PROJECT_DIR$/accounts/permissions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Api/CayXanhApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -719,16 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Api/QuanHuyenPhuongXaApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/Api/TenCXApi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -736,12 +741,256 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Api/QuanHuyenPhuongXaApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/Api/TrangThaiCXApi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="161">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="63" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="132" column="46" lean-forward="true" selection-start-line="132" selection-start-column="3" selection-end-line="132" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4600">
+          <caret line="206" column="44" selection-start-line="206" selection-start-column="44" selection-end-line="206" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Api/admin/ThongTinNguoiDungTheoToken.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Serializers/HinhAnhCayXanh.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/relations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="474" column="16" lean-forward="true" selection-start-line="474" selection-start-column="16" selection-end-line="474" selection-end-column="16" />
+          <folding>
+            <element signature="e#9181#14916#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="38" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Serializers/DuongSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Models/HinhThucThiCongModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0018_hinhanh.py" />
+    <entry file="file://$PROJECT_DIR$/accounts/Models/HinhAnhCX.py" />
+    <entry file="file://$PROJECT_DIR$/accounts/Models/TenCXModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="26" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0019_auto_20191114_2042.py" />
+    <entry file="file://$PROJECT_DIR$/accounts/Api/CayXanhApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/authtoken/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="17" column="66" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0004_myuser_noti_token.py" />
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0018_hinhanhcayxanh.py" />
+    <entry file="file://$PROJECT_DIR$/accounts/Models/TrangThaiTCModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/base_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="131" column="28" lean-forward="true" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customusermodel/debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0018_auto_20191116_1533.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6467">
+          <caret line="386" column="25" lean-forward="true" selection-start-line="386" selection-start-column="25" selection-end-line="386" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customusermodel/dbrouters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0016_auto_20191112_2107.py" />
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0017_myuser_duongdanavatar.py" />
+    <entry file="file://$PROJECT_DIR$/accounts/Models/ChiTietThiCongCayXanh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Models/CayXanhModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customusermodel/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Models/HinhAnhCXModel.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customusermodel/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3542">
+          <caret line="156" column="99" selection-start-line="156" selection-start-column="99" selection-end-line="156" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

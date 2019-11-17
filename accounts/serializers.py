@@ -13,7 +13,7 @@ class UserCreationSerializer(serializers.ModelSerializer):
         model = User
         fields = ['username', 'gioitinh', 'ngaysinh', 'diachi', 'email',
                   'password', 'password2', 'noti_token', 'is_admin', 'is_staff',
-                  'is_active', 'is_employee', 'is_manager', 'phone', 'firstname', 'lastname', 'middlename']
+                  'is_active', 'is_employee', 'is_manager', 'phone', 'firstname', 'lastname', 'middlename', 'duongdanavatar']
 
     def create(self, validated_data):
         algorithm = "bcrypt"
@@ -23,6 +23,7 @@ class UserCreationSerializer(serializers.ModelSerializer):
         username = validated_data["username"]
         password = validated_data["password"].encode('utf8')
         validated_data["password"] = algorithm + '$' + bcrypt.hashpw(password, bcrypt.gensalt(10)).decode()
+        # token, created = Token.objects.get_or_create(user=username)
         return User.objects.create(**validated_data)
 
 class LoginSerializer(serializers.Serializer):
@@ -46,6 +47,3 @@ class TokenSerializer(serializers.ModelSerializer):
     class Meta:
         model = Token
         fields = ("user", "auth_token", "created")
-
-
-
