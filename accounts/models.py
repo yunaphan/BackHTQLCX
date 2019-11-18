@@ -111,3 +111,21 @@ class MyUser(AbstractBaseUser):
 
     def has_module_perms(self, app_lable):
         return True
+
+class Trangthaitc(models.Model):
+    matrangthaitc = models.IntegerField(primary_key=True)
+    trangthaitc = models.CharField(max_length=100)
+    ghichu = models.CharField(max_length=255, null=True, blank=True)
+
+    def __str__(self):
+        return self.trangthaitc
+
+class LichThiCong(models.Model):
+    malichthicong = models.AutoField(primary_key=True)
+    tenlichthicong = models.CharField(max_length=100)
+    NgayBD = models.DateField()
+    NgayHoanThanh = models.DateField()
+    ghichu = models.CharField(max_length=255, null=True, blank=True)
+
+    def __str__(self):
+        return self.tenlichthicong

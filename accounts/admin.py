@@ -1,6 +1,7 @@
 from .forms import UserCreationForm
 from .models import MyUser
 # from accounts.Models.HinhAnhCXModel import Hinhanhcayxanh
+from accounts.models import Trangthaitc
 from django.contrib import admin
 from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
@@ -20,6 +21,7 @@ class UserAdmin(BaseUserAdmin):
 
 admin.site.register(MyUser, UserAdmin)
 # admin.site.register(Hinhanhcayxanh)
+admin.site.register(Trangthaitc)
 admin.site.unregister(Group)
 
 

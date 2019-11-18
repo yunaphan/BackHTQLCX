@@ -9,7 +9,7 @@ from accounts.views import (
 from accounts.Api import (
     CayXanhApi, TenCXApi, TrangThaiCXApi,
     HinhThucThiCongApi, QuanHuyenPhuongXaApi,
-    DuongApi, HinhAnhCayXanhApi
+    DuongApi, HinhAnhCayXanhApi, TrangThaiTCApi, LichThiCongApi
 )
 from accounts.Api.admin import (ThongTinNguoiDungTheoToken)
 from django.conf import settings
@@ -26,7 +26,9 @@ router.register(r'hinh-thuc-thi-cong', HinhThucThiCongApi.HinhThucThiCongView, b
 router.register(r'danh-muc-quan-huyen', QuanHuyenPhuongXaApi.QuanHuyenView, base_name='Danh mục quận huyện')
 router.register(r'danh-muc-phuong-xa', QuanHuyenPhuongXaApi.PhuongxaView, base_name='Danh mục phường xã')
 router.register(r'danh-muc-tuyen-duong', DuongApi.DuongView, base_name='Danh mục tuyến đường')
-# router.register(r'hinh-anh-cay', HinhAnhCayXanhApi.HinhAnhCayXanhView.as_view(), base_name='Hình ảnh của cây xanh')
+router.register(r'hinh-anh-cay', HinhAnhCayXanhApi.HinhAnhCayXanhView, base_name="Hình ảnh cây")
+router.register(r'danh-muc-trang-thai-thi-cong', TrangThaiTCApi.TrangThaiThiCongView, base_name='Trạng thái thi công')
+router.register(r'lich-thi-cong', LichThiCongApi.LichThiCongView, base_name="Lịch thi công")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -34,7 +36,8 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(), name='logout'),
     path('infomations-by-token/', ThongTinNguoiDungTheoToken.InformationsByToken.as_view(), name='Thông tin người dùng từ token'),
     path('', include(router.urls)),
-    path('hinh-anh-cay/', HinhAnhCayXanhApi.HinhAnhCayXanhView.as_view(), name="hình ảnh cây"),
+    # path('hinh-anh-cay/', HinhAnhCayXanhApi.DsHinhAnhCayXanhView.as_view(), name="Danh sách hình ảnh cây"),
+    # path('them-hinh-anh-cay/', HinhAnhCayXanhApi.ThemHinhAnhCayXanhView.as_view(), name="Thêm hình ảnh cây"),
 ]
 
 # urlpatterns = format_suffix_patterns(urlpatterns)

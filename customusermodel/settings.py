@@ -111,21 +111,8 @@ WSGI_APPLICATION = 'customusermodel.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'Accounts',
-        'USER': 'sa',
-        'PASSWORD': 'Vnpttg@2011',
-        'HOST': '113.161.225.252\MSSQL11',
-        'PORT': '',
-
-        'OPTIONS': {
-            'driver': 'ODBC Driver 13 for SQL Server',
-        },
-    },
-    'DoThi': {
         'ENGINE': 'sql_server.pyodbc',
         'NAME': 'DoThi',
         'USER': 'sde',
@@ -137,6 +124,7 @@ DATABASES = {
             'driver': 'ODBC Driver 13 for SQL Server',
         },
     },
+
 }
 
 REST_FRAMEWORK = {

@@ -6,8 +6,9 @@ User = get_user_model()
 
 class UserCreationSerializer(serializers.ModelSerializer):
     password2 = serializers.CharField(read_only=True)
-    noti_token = serializers.CharField(max_length=255, allow_null=True, allow_blank=True)
+    noti_token = serializers.CharField(max_length=255, allow_null=True, allow_blank=True, required=False)
     middlename = serializers.CharField(max_length=255, allow_null=True, allow_blank=True)
+    duongdanavatar = serializers.ImageField(allow_null=True)
 
     class Meta:
         model = User

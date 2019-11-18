@@ -1,23 +1,33 @@
 from accounts.Serializers.HinhAnhSerializer import HinhAnhCayXanhSerializer
-# from accounts.Models.HinhAnhCXModel import Hinhanhcayxanh
-from rest_framework.generics import CreateAPIView
-from rest_framework import viewsets, response, status
-from rest_framework import permissions
+from rest_framework import response, status
+from rest_framework import permissions, viewsets
 from accounts.permissions import IsAdmin
-from django.db import connection
+from accounts.Models.HinhAnhCXModel import Hinhanhcayxanh
 from rest_framework.views import APIView
-from rest_framework.parsers import MultiPartParser, FormParser
+from django.db import connections
+from django.http import JsonResponse
 
-class HinhAnhCayXanhView(APIView):
+class HinhAnhCayXanhView(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
-    # queryset = HINHANHCAYXANH.objects.using('DoThi').all()
-    # serializer_class = HinhAnhCayXanhSerializer
+    queryset = Hinhanhcayxanh.objects.all()
+    serializer_class = HinhAnhCayXanhSerializer
+    lookup_field = "maanh"
 
-    parser_classes = (MultiPartParser, FormParser)
-
-    def post(self, request, format=None):
-        serializer = HinhAnhCayXanhSerializer(data=request.data)
-        if serializer.is_valid():
-            self.object = serializer.save(using='DoThi')
-            return response.Response("Tạo thành công", status=status.HTTP_201_CREATED, )
-        return response.Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+# class DsHinhAnhCayXanhView(APIView):
+#     permission_classes = (permissions.IsAuthenticated, IsAdmin)
+#
+#     def get(self, request):
+#         ref = connections.cursor()
+#         hinhanhcayxanh = ref.execute("Select * from sde.HINHANHCAYXANH")
+#         serializer = (hinhanhcayxanh)
+#         return JsonResponse(serializer, safe=False)
+#
+# class ThemHinhAnhCayXanhView(APIView):
+#     permission_classes = (permissions.IsAuthenticated, IsAdmin)
+#
+#     def post(self, request, format=None):
+#         serializer = HinhAnhCayXanhSerializer(data=request.data)
+#         if serializer.is_valid():
+#             self.object = serializer.save(using='DoThi')
+#             return response.Response("Tạo thành công", status=status.HTTP_201_CREATED, )
+#         return response.Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
