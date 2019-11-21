@@ -1,7 +1,10 @@
 from django.db import models
+import uuid
 from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser
 )
+from accounts.Models.CayXanhModel import Cayxanh
+from accounts.Models.HinhThucThiCongModel import Hinhthucthicong
 from django.core.validators import RegexValidator
 
 USERNAME_REGEX = '^[a-zA-Z0-9.+-]*$'
@@ -87,7 +90,7 @@ class MyUser(AbstractBaseUser):
     lastname = models.CharField(max_length=255, null=True)
     middlename = models.CharField(max_length=255, null=True)
     last_login = models.DateTimeField(blank=True, null=True)
-    duongdanavatar = models.ImageField(upload_to='avatar', blank=True, null=True)
+    duongdanavatar = models.FileField(upload_to='avatar', blank=True, null=True)
     phone = models.CharField(max_length=10, null=True)
 
     objects = MyUserManager()
@@ -129,3 +132,13 @@ class LichThiCong(models.Model):
 
     def __str__(self):
         return self.tenlichthicong
+
+class ChiTietThiCong(models.Model):
+    macttc = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    objectid = models.ForeignKey(Cayxanh, related_name="objectid_cx_cua_thi_cong", on_delete=models.CASCADE)
+    taikhoan = models.ForeignKey(MyUser, related_name="nguoi_dung_thi_cong_cong_trinh", on_delete=models.DO_NOTHING)
+    trangthaitc = models.ForeignKey(Trangthaitc, related_name="trang_thai_cua_thi_cong", on_delete=models.DO_NOTHING)
+    lichthicong = models.ForeignKey(LichThiCong, related_name="lich_thi_cong", on_delete=models.DO_NOTHING)
+    ghichu = models.CharField(max_length=255, null=True, blank=True)
+    hinhthucthicong = models.ForeignKey(Hinhthucthicong, related_name="hinh_thuc_thi_cong", on_delete=models.DO_NOTHING)
+    ngaycapnhat = models.DateField(auto_created=True)

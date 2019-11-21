@@ -7,13 +7,32 @@ from rest_framework.authtoken.models import Token
 from accounts.permissions import IsAdmin
 from . import serializers
 from .serializers import UserCreationSerializer, LoginSerializer
+from rest_framework.parsers import FileUploadParser, FormParser, JSONParser, MultiPartParser
+from rest_framework.generics import ListAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.response import Response
 User = get_user_model()
 
-class RegisterView(viewsets.ModelViewSet):
+class ListUserView(viewsets.GenericViewSet, ListAPIView):
+    # parser_class = (FileUploadParser, FormParser, JSONParser)
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = UserCreationSerializer
     queryset = User.objects.all()
-    lookup_field = 'username'
+
+class RegisterView(APIView):
+    permission_classes = (permissions.IsAuthenticated, IsAdmin)
+    parser_class = (FileUploadParser, MultiPartParser, FormParser, JSONParser)
+    def post(self, request):
+        serializer = UserCreationSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class RetriveUserView(viewsets.GenericViewSet, RetrieveUpdateDestroyAPIView):
+    permission_classes = (permissions.IsAuthenticated, IsAdmin)
+    serializer_class = UserCreationSerializer
+    queryset = User.objects.all()
+    lookup_field = "username"
 
 class LoginView(APIView):
     permission_classes = (AllowAny,)
