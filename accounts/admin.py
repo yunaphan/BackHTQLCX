@@ -9,11 +9,11 @@ from rest_framework.authtoken.admin import TokenAdmin
 
 class UserAdmin(BaseUserAdmin):
     add_form = UserCreationForm
-    list_display = ('username', 'password', 'email', 'ngaysinh', 'gioitinh', 'diachi', 'is_admin', 'is_active', 'is_staff', 'is_manager', 'is_employee', 'duongdanavatar')
+    list_display = ('username', 'password', 'email', 'ngaysinh', 'gioitinh', 'diachi', 'is_admin', 'is_active', 'is_staff', 'duongdanavatar')
     list_filter = ('is_admin', 'is_active')
     fieldsets = (
         (None, {'fields': ('username', 'email', 'password', 'gioitinh', 'diachi', 'ngaysinh', 'duongdanavatar')}),
-        ('Permissions', {'fields': ('is_admin', 'is_active', 'is_staff', 'is_employee', 'is_manager')})
+        ('Permissions', {'fields': ('is_admin', 'is_active', 'is_staff')})
     )
     search_fields = ('username', 'email')
     ordering = ('username', 'email')

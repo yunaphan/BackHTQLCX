@@ -10,7 +10,15 @@ from .serializers import UserCreationSerializer, LoginSerializer
 from rest_framework.parsers import FileUploadParser, FormParser, JSONParser, MultiPartParser
 from rest_framework.generics import ListAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.response import Response
+from accounts.models import NhomThiCong
+from accounts.serializers import NhomTCSerializer
 User = get_user_model()
+
+class NhomThiCongView(viewsets.ModelViewSet):
+    permission_classes = (permissions.IsAuthenticated, IsAdmin)
+    serializer_class = NhomTCSerializer
+    queryset = NhomThiCong.objects.all()
+    lookup_field = "manhomthicong"
 
 class ListUserView(viewsets.GenericViewSet, ListAPIView):
     # parser_class = (FileUploadParser, FormParser, JSONParser)

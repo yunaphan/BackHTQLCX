@@ -8,6 +8,6 @@ from accounts.permissions import IsAdmin
 class CayXanhView(viewsets.GenericViewSet, ListAPIView ):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = CayXanhserializer
-    queryset = Cayxanh.objects.using('DoThi').select_related('matencx').values('objectid', 'sohieu', 'matencx', 'kinhdo', 'vido', 'duongkinh',
+    queryset = Cayxanh.objects.values('objectid', 'sohieu', 'matencx', 'kinhdo', 'vido', 'duongkinh',
                   'chieucao', 'dorongtan', 'ngaytrong', 'ngaycapnhat', 'thuoctinh',
                   'ghichu', 'matinhtrang', 'tuyenduong', 'nguoicapnhat')

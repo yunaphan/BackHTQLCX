@@ -12,7 +12,7 @@ USERNAME_REGEX = '^[a-zA-Z0-9.+-]*$'
 class MyUserManager(BaseUserManager):
     use_in_migrations = True
 
-    def create_user(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, is_employee, is_manager, password, **extra_fields):
+    def create_user(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password, **extra_fields):
         if not email:
             raise ValueError('Tài khoản phải có địa chỉ email')
         user = self.model(
@@ -24,8 +24,8 @@ class MyUserManager(BaseUserManager):
             phone=phone,
             firstname=firstname,
             lastname=lastname,
-            is_employee=is_employee,
-            is_manager=is_manager,
+            # is_employee=is_employee,
+            # is_manager=is_manager,
             **extra_fields
         )
         extra_fields.setdefault('is_active', True)
@@ -52,14 +52,22 @@ class MyUserManager(BaseUserManager):
     #     return self.create_user(
     #         username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password=password, **extra_fields)
 
-    def create_superuser(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, is_employee, is_manager, password, **extra_fields):
+    def create_superuser(self, username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password, **extra_fields):
         extra_fields.setdefault('is_admin', True)
         # extra_fields.setdefault('is_employee', False)
         # extra_fields.setdefault('is_manager', False)
         extra_fields.setdefault('is_active', True)
         extra_fields.setdefault('is_staff', True)
         return self.create_user(
-            username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname,  is_employee, is_manager, password=password, **extra_fields)
+            username, email, ngaysinh, diachi, gioitinh, phone, firstname, lastname, password=password, **extra_fields)
+
+class NhomThiCong(models.Model):
+    manhomthicong = models.AutoField(primary_key=True)
+    tennhomthicong = models.CharField(max_length=100)
+    # nhomtruong = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.tennhomthicong
 
 class MyUser(AbstractBaseUser):
     username = models.CharField(
@@ -78,8 +86,8 @@ class MyUser(AbstractBaseUser):
                 verbose_name='email address'
         )
     is_admin = models.BooleanField(default=False)
-    is_manager = models.BooleanField(default=False)
-    is_employee = models.BooleanField(default=False)
+    # is_manager = models.BooleanField(default=False)
+    # is_employee = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     gioitinh = models.CharField(max_length=10, null=True)
@@ -92,13 +100,14 @@ class MyUser(AbstractBaseUser):
     last_login = models.DateTimeField(blank=True, null=True)
     duongdanavatar = models.FileField(upload_to='avatar', blank=True, null=True)
     phone = models.CharField(max_length=10, null=True)
+    nhomthicong = models.ForeignKey(NhomThiCong, on_delete=models.DO_NOTHING, related_name="thanhviennhomthicong", null=True, blank=True)
 
     objects = MyUserManager()
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email', 'ngaysinh', 'gioitinh', 'diachi',
-                       'is_admin', 'is_active', 'is_employee', 'is_manager',
-                       'phone', 'firstname', 'lastname', 'duongdanavatar']
+                       'is_admin', 'is_active',
+                       'phone', 'firstname', 'lastname', 'duongdanavatar', ]
 
     def __str__(self):
         return self.username
@@ -128,6 +137,8 @@ class LichThiCong(models.Model):
     tenlichthicong = models.CharField(max_length=100)
     NgayBD = models.DateField()
     NgayHoanThanh = models.DateField()
+    hinhthucthicong = models.ForeignKey(Hinhthucthicong, related_name="lichthicong", on_delete=models.DO_NOTHING, null=True, blank=True)
+    trangthaitc = models.ForeignKey(Trangthaitc, related_name="trangthailichthicong", on_delete=models.DO_NOTHING, null=True, blank=True)
     ghichu = models.CharField(max_length=255, null=True, blank=True)
 
     def __str__(self):
@@ -135,10 +146,35 @@ class LichThiCong(models.Model):
 
 class ChiTietThiCong(models.Model):
     macttc = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    objectid = models.ForeignKey(Cayxanh, related_name="objectid_cx_cua_thi_cong", on_delete=models.CASCADE)
-    taikhoan = models.ForeignKey(MyUser, related_name="nguoi_dung_thi_cong_cong_trinh", on_delete=models.DO_NOTHING)
-    trangthaitc = models.ForeignKey(Trangthaitc, related_name="trang_thai_cua_thi_cong", on_delete=models.DO_NOTHING)
-    lichthicong = models.ForeignKey(LichThiCong, related_name="lich_thi_cong", on_delete=models.DO_NOTHING)
-    ghichu = models.CharField(max_length=255, null=True, blank=True)
-    hinhthucthicong = models.ForeignKey(Hinhthucthicong, related_name="hinh_thuc_thi_cong", on_delete=models.DO_NOTHING)
-    ngaycapnhat = models.DateField(auto_created=True)
+    # objectidcx = models.ForeignKey(Cayxanh, related_name="ob_cayxanh", on_delete=models.DO_NOTHING, null=True, blank=True)
+    nhomthiconglich = models.ForeignKey(NhomThiCong, related_name="nhomthiconglich", on_delete=models.DO_NOTHING, null=True, blank=True)
+    lichthicong = models.ForeignKey(LichThiCong, related_name="chitietlichthicong", on_delete=models.CASCADE)
+    mota = models.CharField(max_length=255, null=True, blank=True)
+    ngaycapnhat = models.DateField(auto_created=True, default="2019-11-11")
+
+    def __str__(self):
+        return self.lichthicong
+
+class Quyennguoidung(models.Model):
+    maquyen = models.AutoField(primary_key=True)
+    quyennguoidung = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.quyennguoidung
+
+class Chucnang(models.Model):
+    machucnang = models.AutoField(primary_key=True)
+    chucnang = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.chucnang
+
+class Chucnangnguoidung(models.Model):
+    machucnangnguoidung = models.AutoField(primary_key=True)
+    maquyen = models.ForeignKey(Quyennguoidung, on_delete=models.CASCADE, related_name="quyen_nguoi_dung")
+    machucnang = models.ForeignKey(Chucnang, on_delete=models.CASCADE, related_name="chuc_nang_nguoi_dung")
+    xem = models.CharField(max_length=100, null=True, blank=True)
+    them = models.CharField(max_length=100, null=True, blank=True)
+    sua = models.CharField(max_length=100, null=True, blank=True)
+    xoa = models.CharField(max_length=100, null=True, blank=True)
+    xuat = models.CharField(max_length=100, null=True, blank=True)

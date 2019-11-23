@@ -8,3 +8,4 @@ class ChiTietLichThiCongView(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     queryset = ChiTietThiCong.objects.all()
     serializer_class = ChiTietLichThiCongSerializer
+    lookup_field = "macttc"

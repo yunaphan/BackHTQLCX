@@ -7,4 +7,5 @@ from rest_framework import permissions
 class HinhThucThiCongView(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = HinhThucThiCongSeria
-    queryset = Hinhthucthicong.objects.using('DoThi').all()
+    queryset = Hinhthucthicong.objects.all()
+    lookup_field = "maloai"

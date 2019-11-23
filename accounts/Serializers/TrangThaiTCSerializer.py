@@ -1,15 +1,15 @@
 from rest_framework import serializers
 from accounts import models
-from django.db import connections
-
+from accounts.Serializers.LichThiCongSerializer import LichThiCongSerializer
 class TrangThaiThiCongSerializer(serializers.ModelSerializer):
     matrangthaitc = serializers.IntegerField()
     trangthaitc = serializers.CharField(max_length=50, required=True)
+    trangthailichthicong = LichThiCongSerializer(many=True, read_only=True)
     ghichu = serializers.CharField(max_length=100, allow_null=True, allow_blank=True)
 
     class Meta:
         model = models.Trangthaitc
-        fields = ('matrangthaitc', 'trangthaitc', 'ghichu')
+        fields = ('matrangthaitc', 'trangthaitc', 'trangthailichthicong', 'ghichu')
     #
     # def create(self, validated_data):
     #     trangthaitc = connections.cursor()

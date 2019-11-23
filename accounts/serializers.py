@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model, authenticate
 from rest_framework.authtoken.models import Token
+from accounts.models import NhomThiCong
+from accounts.Serializers.ChiTietLichThiCongSerializer import ChiTietLichThiCongSerializer
 import bcrypt
 User = get_user_model()
 
@@ -14,7 +16,8 @@ class UserCreationSerializer(serializers.ModelSerializer):
         model = User
         fields = ['username', 'gioitinh', 'ngaysinh', 'diachi', 'email',
                   'password', 'password2', 'noti_token', 'is_admin', 'is_staff',
-                  'is_active', 'is_employee', 'is_manager', 'phone', 'firstname', 'lastname', 'middlename', 'duongdanavatar']
+                  'is_active', 'is_employee', 'is_manager', 'phone', 'firstname',
+                  'lastname', 'middlename', 'duongdanavatar', 'nhomthicong']
 
     def create(self, validated_data):
         algorithm = "bcrypt"
@@ -26,6 +29,16 @@ class UserCreationSerializer(serializers.ModelSerializer):
         validated_data["password"] = algorithm + '$' + bcrypt.hashpw(password, bcrypt.gensalt(10)).decode()
         # token, created = Token.objects.get_or_create(user=username)
         return User.objects.create(**validated_data)
+
+
+class NhomTCSerializer(serializers.ModelSerializer):
+    thanhviennhomthicong = UserCreationSerializer(many=True, read_only=True)
+    # nhomthiconglich = ChiTietLichThiCongSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = NhomThiCong
+        fields = ('manhomthicong', 'tennhomthicong', 'thanhviennhomthicong')
+
 
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField(max_length=255, required=True)
