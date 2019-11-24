@@ -16,8 +16,8 @@ class UserCreationSerializer(serializers.ModelSerializer):
         model = User
         fields = ['username', 'gioitinh', 'ngaysinh', 'diachi', 'email',
                   'password', 'password2', 'noti_token', 'is_admin', 'is_staff',
-                  'is_active', 'is_employee', 'is_manager', 'phone', 'firstname',
-                  'lastname', 'middlename', 'duongdanavatar', 'nhomthicong']
+                  'is_active', 'phone', 'firstname', 'lastname',
+                  'middlename', 'duongdanavatar', 'nhomthicong']
 
     def create(self, validated_data):
         algorithm = "bcrypt"

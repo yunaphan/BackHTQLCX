@@ -2,7 +2,7 @@ from accounts.Serializers.HinhAnhSerializer import HinhAnhCayXanhSerializer
 from rest_framework import response, status
 from rest_framework import permissions, viewsets
 from accounts.permissions import IsAdmin
-from accounts.Models.HinhAnhCXModel import Hinhanhcayxanh
+from accounts.models import Hinhanhcayxanh
 from rest_framework.views import APIView
 from django.db import connections
 from django.http import JsonResponse

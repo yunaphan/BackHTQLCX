@@ -1,6 +1,6 @@
 from .forms import UserCreationForm
 from .models import MyUser
-# from accounts.Models.HinhAnhCXModel import Hinhanhcayxanh
+# from accounts.models import Hinhanhcayxanh
 from accounts.models import Trangthaitc
 from django.contrib import admin
 from django.contrib.auth.models import Group

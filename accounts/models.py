@@ -106,8 +106,7 @@ class MyUser(AbstractBaseUser):
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email', 'ngaysinh', 'gioitinh', 'diachi',
-                       'is_admin', 'is_active',
-                       'phone', 'firstname', 'lastname', 'duongdanavatar', ]
+                       'is_admin', 'is_active', 'phone', 'firstname', 'lastname', 'duongdanavatar', ]
 
     def __str__(self):
         return self.username
@@ -178,3 +177,14 @@ class Chucnangnguoidung(models.Model):
     sua = models.CharField(max_length=100, null=True, blank=True)
     xoa = models.CharField(max_length=100, null=True, blank=True)
     xuat = models.CharField(max_length=100, null=True, blank=True)
+
+class Hinhanhcayxanh(models.Model):
+    maanh = models.AutoField(primary_key=True)
+    objectid = models.IntegerField(blank=True, null=True)
+    duongdanhinhanh = models.CharField(max_length=100, blank=True, null=True)
+    mota = models.TextField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'HINHANHCAYXANH'
+

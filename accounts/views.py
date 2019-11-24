@@ -21,7 +21,6 @@ class NhomThiCongView(viewsets.ModelViewSet):
     lookup_field = "manhomthicong"
 
 class ListUserView(viewsets.GenericViewSet, ListAPIView):
-    # parser_class = (FileUploadParser, FormParser, JSONParser)
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = UserCreationSerializer
     queryset = User.objects.all()

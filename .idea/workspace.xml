@@ -2,32 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6796efdf-3ec9-492b-8ca8-cb55fe23d94c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/accounts/Serializers/PhanQuyenSerializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Api/CayXanhApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/CayXanhApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Api/ChiTietLichThiCongApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/ChiTietLichThiCongApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Api/HinhThucThiCongApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/HinhThucThiCongApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Api/LichThiCongApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/LichThiCongApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Api/SapLichThiCongApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/PhanQuyenApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Models/CayXanhModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Models/CayXanhModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Models/HinhThucThiCongModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Models/HinhThucThiCongModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/Models/HinhAnhCXModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Models/HinhAnhCXModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Serializers/ChiTietLichThiCongSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Serializers/ChiTietLichThiCongSerializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Serializers/HinhThucThiCongSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Serializers/HinhThucThiCongSerializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Serializers/LichThiCongSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Serializers/LichThiCongSerializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Serializers/TrangThaiTCSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Serializers/TrangThaiTCSerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/migrations/0002_lichthicong.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/migrations/0003_chitietthicong.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/migrations/0004_auto_20191121_0101.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/permissions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customusermodel/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/customusermodel/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customusermodel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/customusermodel/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/accounts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="174" column="105" lean-forward="true" selection-start-line="174" selection-start-column="85" selection-end-line="174" selection-end-column="105" />
+            <state relative-caret-position="106">
+              <caret line="181" column="45" selection-start-line="181" selection-start-column="45" selection-end-line="181" selection-end-column="45" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -52,23 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/customusermodel/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="35" column="110" lean-forward="true" selection-start-line="35" selection-start-column="110" selection-end-line="35" selection-end-column="110" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/Serializers/PhanQuyenSerializer.py">
+        <entry file="file://$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="17" column="81" lean-forward="true" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
+            <state relative-caret-position="253">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -77,12 +48,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/Api/PhanQuyenApi.py">
+        <entry file="file://$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/migrations/0010_auto_20191124_1431.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-69" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/migrations/0009_auto_20191123_1714.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customusermodel/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+              <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
               <folding>
-                <element signature="e#0#71#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,9 +112,9 @@
       <find>databas</find>
       <find>static_root</find>
       <find>HINHANHCAYXANH</find>
-      <find>data</find>
       <find>clas</find>
       <find>nhomthicong</find>
+      <find>data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/accounts/forms.py" />
         <option value="$PROJECT_DIR$/accounts/Api/CayXanhView.py" />
         <option value="$PROJECT_DIR$/../ubg/ubg/dbrouters.py" />
         <option value="$PROJECT_DIR$/customusermodel/dbrouters.py" />
@@ -142,9 +148,6 @@
         <option value="$PROJECT_DIR$/accounts/Models/TrangThaiThiCongModel.py" />
         <option value="$PROJECT_DIR$/accounts/Models/TrangThaiCXModel.py" />
         <option value="$PROJECT_DIR$/accounts/migrations.py" />
-        <option value="$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py" />
-        <option value="$PROJECT_DIR$/accounts/Models/HinhAnhCXModel.py" />
-        <option value="$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py" />
         <option value="$PROJECT_DIR$/accounts/Api/TrangThaiTCApi.py" />
         <option value="$PROJECT_DIR$/accounts/Serializers/chitietlichthicongSerializer.py" />
         <option value="$PROJECT_DIR$/accounts/Api/CayXanhApi.py" />
@@ -158,15 +161,19 @@
         <option value="$PROJECT_DIR$/customusermodel/settings.py" />
         <option value="$PROJECT_DIR$/accounts/Api/LichThiCongApi.py" />
         <option value="$PROJECT_DIR$/accounts/permissions.py" />
-        <option value="$PROJECT_DIR$/accounts/admin.py" />
         <option value="$PROJECT_DIR$/accounts/Models/CayXanhModel.py" />
-        <option value="$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py" />
-        <option value="$PROJECT_DIR$/accounts/serializers.py" />
-        <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/accounts/Api/PhanQuyenApi.py" />
-        <option value="$PROJECT_DIR$/accounts/models.py" />
         <option value="$PROJECT_DIR$/accounts/Serializers/PhanQuyenSerializer.py" />
         <option value="$PROJECT_DIR$/customusermodel/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/views.py" />
+        <option value="$PROJECT_DIR$/accounts/serializers.py" />
+        <option value="$PROJECT_DIR$/accounts/Models/HinhAnhCXModel.py" />
+        <option value="$PROJECT_DIR$/accounts/admin.py" />
+        <option value="$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py" />
+        <option value="$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py" />
+        <option value="$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py" />
+        <option value="$PROJECT_DIR$/accounts/Models/HinhAnhCayXanhModel.py" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
       </list>
     </option>
   </component>
@@ -182,7 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,6 +211,18 @@
               <item name="customusermodel" type="b2602c69:ProjectViewProjectNode" />
               <item name="customusermodel" type="462c0819:PsiDirectoryNode" />
               <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="customusermodel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="customusermodel" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="customusermodel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="customusermodel" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
               <item name="Serializers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -216,6 +234,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,16 +387,18 @@
       <workItem from="1574445611971" duration="5106000" />
       <workItem from="1574478949939" duration="13323000" />
       <workItem from="1574498237975" duration="6588000" />
+      <workItem from="1574505813529" duration="785000" />
+      <workItem from="1574572466376" duration="5935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347818000" />
+    <option name="totallyTimeSpent" value="354538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24810892" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25567323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -391,7 +412,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991454" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.408547" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5555556" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32991454" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -438,31 +459,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="131" column="28" lean-forward="true" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customusermodel/debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/migrations/0018_auto_20191116_1533.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6467">
@@ -561,47 +557,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Models/HinhAnhCXModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="54" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3566">
           <caret line="345" column="41" selection-start-line="345" selection-start-column="37" selection-end-line="345" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Api/CayXanhApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,43 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customusermodel/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3473">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/Api/ChiTietLichThiCongApi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -761,30 +683,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="123" selection-start-line="11" selection-start-column="123" selection-end-line="11" selection-end-column="123" />
+        <state relative-caret-position="207">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="18" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="174" column="105" lean-forward="true" selection-start-line="174" selection-start-column="85" selection-end-line="174" selection-end-column="105" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/Serializers/PhanQuyenSerializer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="17" column="81" lean-forward="true" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
+        <state relative-caret-position="368">
+          <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -793,20 +705,131 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/Api/PhanQuyenApi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="345">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/deletion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/customusermodel/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="35" column="110" lean-forward="true" selection-start-line="35" selection-start-column="110" selection-end-line="35" selection-end-column="110" />
+        <state relative-caret-position="285">
+          <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Models/HinhAnhCXModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Api/CayXanhApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Serializers/CayXanhSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customusermodel/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="119" column="17" lean-forward="true" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0010_auto_20191124_1414.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Serializers/HinhAnhSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Api/HinhAnhCayXanhApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0009_auto_20191123_1714.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0010_auto_20191124_1431.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/Models/HinhAnhCayXanhModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="10" selection-start-line="10" selection-start-column="2" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="181" column="45" selection-start-line="181" selection-start-column="45" selection-end-line="181" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
