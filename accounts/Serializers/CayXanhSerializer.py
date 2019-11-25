@@ -4,8 +4,8 @@ from accounts.Serializers.ChiTietLichThiCongSerializer import ChiTietLichThiCong
 from accounts.Serializers.HinhAnhSerializer import HinhAnhCayXanhSerializer
 
 class CayXanhserializer(serializers.ModelSerializer):
-    matinhtrang = serializers.StringRelatedField(many=True)
-    # ob_cayxanh = serializers.StringRelatedField(many=True)
+    # matinhtrang = serializers.StringRelatedField(many=True)
+    # ob_cayxanh = serializers.StringRelatedField(many=True, read_only=True)
 
     class Meta:
         model = Cayxanh

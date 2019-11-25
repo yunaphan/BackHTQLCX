@@ -1,17 +1,17 @@
 from accounts.Serializers.HinhAnhSerializer import HinhAnhCayXanhSerializer
-from rest_framework import response, status
 from rest_framework import permissions, viewsets
 from accounts.permissions import IsAdmin
 from accounts.models import Hinhanhcayxanh
-from rest_framework.views import APIView
-from django.db import connections
-from django.http import JsonResponse
+from django_filters.rest_framework import DjangoFilterBackend
 
 class HinhAnhCayXanhView(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     queryset = Hinhanhcayxanh.objects.all()
     serializer_class = HinhAnhCayXanhSerializer
     lookup_field = "maanh"
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['objectid']
+
 
 # class DsHinhAnhCayXanhView(APIView):
 #     permission_classes = (permissions.IsAuthenticated, IsAdmin)

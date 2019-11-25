@@ -5,6 +5,7 @@ from django.contrib.auth.models import (
 )
 from accounts.Models.CayXanhModel import Cayxanh
 from accounts.Models.HinhThucThiCongModel import Hinhthucthicong
+from accounts.Models.TimDuongModel import Timduong
 from django.core.validators import RegexValidator
 
 USERNAME_REGEX = '^[a-zA-Z0-9.+-]*$'
@@ -145,11 +146,11 @@ class LichThiCong(models.Model):
 
 class ChiTietThiCong(models.Model):
     macttc = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    # objectidcx = models.ForeignKey(Cayxanh, related_name="ob_cayxanh", on_delete=models.DO_NOTHING, null=True, blank=True)
+    tuyenduong = models.CharField(max_length=100)
     nhomthiconglich = models.ForeignKey(NhomThiCong, related_name="nhomthiconglich", on_delete=models.DO_NOTHING, null=True, blank=True)
     lichthicong = models.ForeignKey(LichThiCong, related_name="chitietlichthicong", on_delete=models.CASCADE)
     mota = models.CharField(max_length=255, null=True, blank=True)
-    ngaycapnhat = models.DateField(auto_created=True, default="2019-11-11")
+    ngaycapnhat = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return self.lichthicong
@@ -172,16 +173,16 @@ class Chucnangnguoidung(models.Model):
     machucnangnguoidung = models.AutoField(primary_key=True)
     maquyen = models.ForeignKey(Quyennguoidung, on_delete=models.CASCADE, related_name="quyen_nguoi_dung")
     machucnang = models.ForeignKey(Chucnang, on_delete=models.CASCADE, related_name="chuc_nang_nguoi_dung")
-    xem = models.CharField(max_length=100, null=True, blank=True)
-    them = models.CharField(max_length=100, null=True, blank=True)
-    sua = models.CharField(max_length=100, null=True, blank=True)
-    xoa = models.CharField(max_length=100, null=True, blank=True)
-    xuat = models.CharField(max_length=100, null=True, blank=True)
+    xem = models.CharField(max_length=100, null=True, blank=True, default="1.0")
+    them = models.CharField(max_length=100, null=True, blank=True, default="1.0")
+    sua = models.CharField(max_length=100, null=True, blank=True, default="1.0")
+    xoa = models.CharField(max_length=100, null=True, blank=True, default="1.0")
+    xuat = models.CharField(max_length=100, null=True, blank=True, default="1.0")
 
 class Hinhanhcayxanh(models.Model):
     maanh = models.AutoField(primary_key=True)
     objectid = models.IntegerField(blank=True, null=True)
-    duongdanhinhanh = models.CharField(max_length=100, blank=True, null=True)
+    duongdanhinhanh = models.TextField(blank=True, null=True)
     mota = models.TextField(blank=True, null=True)
 
     class Meta:
