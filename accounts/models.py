@@ -174,11 +174,11 @@ class Chucnangnguoidung(models.Model):
     machucnangnguoidung = models.AutoField(primary_key=True)
     maquyen = models.ForeignKey(Quyennguoidung, on_delete=models.CASCADE, related_name="quyen_nguoi_dung", null=True, blank=True)
     machucnang = models.ForeignKey(Chucnang, on_delete=models.CASCADE, related_name="chuc_nang_nguoi_dung", null=True, blank=True)
-    xem = models.CharField(max_length=100, null=True, blank=True, default="1.0")
-    them = models.CharField(max_length=100, null=True, blank=True, default="1.0")
-    sua = models.CharField(max_length=100, null=True, blank=True, default="1.0")
-    xoa = models.CharField(max_length=100, null=True, blank=True, default="1.0")
-    xuat = models.CharField(max_length=100, null=True, blank=True, default="1.0")
+    xem = models.CharField(max_length=100, null=True, blank=True)
+    them = models.CharField(max_length=100, null=True, blank=True)
+    sua = models.CharField(max_length=100, null=True, blank=True)
+    xoa = models.CharField(max_length=100, null=True, blank=True)
+    xuat = models.CharField(max_length=100, null=True, blank=True)
 
 class Hinhanhcayxanh(models.Model):
     maanh = models.AutoField(primary_key=True)

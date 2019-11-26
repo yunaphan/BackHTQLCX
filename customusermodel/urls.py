@@ -17,7 +17,7 @@ from django.conf.urls.static import static
 from rest_framework import routers
 router = routers.DefaultRouter()
 
-router.register(r'user-list', ListUserView, base_name='Danh sách người dùng')
+router.register(r'user', ListUserView, base_name='Danh sách người dùng')
 router.register(r'user', RetriveUserView, base_name='Chi tiết cập nhật thông tin người dùng')
 router.register(r'token', Tokenuser, base_name='token')
 router.register(r'cay-xanh', CayXanhApi.CayXanhView, base_name='cây xanh')
@@ -40,7 +40,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', csrf_exempt(LoginView.as_view()), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
-    path('user/', RegisterView.as_view(), name="đăng kí người dùng"),
+    # path('user/', RegisterView.as_view(), name="đăng kí người dùng"),
     path('infomations-by-token/', ThongTinNguoiDungTheoToken.InformationsByToken.as_view(), name='Thông tin người dùng từ token'),
     path('', include(router.urls)),
 ]
