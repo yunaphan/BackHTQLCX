@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from accounts.models import Chucnang, Chucnangnguoidung, Quyennguoidung
+from accounts.serializers import UserCreationSerializer
 
 
 class ChucnangnguoidungSerializer(serializers.ModelSerializer):
@@ -9,6 +10,7 @@ class ChucnangnguoidungSerializer(serializers.ModelSerializer):
 
 class QuyenNguoiDungSerializer(serializers.ModelSerializer):
     quyen_nguoi_dung = ChucnangnguoidungSerializer(many=True, read_only=True)
+    quyen = UserCreationSerializer(many=True, read_only=True)
 
     class Meta:
         model = Quyennguoidung

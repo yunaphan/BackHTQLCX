@@ -8,7 +8,7 @@ from accounts.permissions import IsAdmin
 from . import serializers
 from .serializers import UserCreationSerializer, LoginSerializer
 from rest_framework.parsers import FileUploadParser, FormParser, JSONParser, MultiPartParser
-from rest_framework.generics import ListAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.generics import ListAPIView, RetrieveUpdateDestroyAPIView, CreateAPIView
 from rest_framework.response import Response
 from accounts.models import NhomThiCong
 from accounts.serializers import NhomTCSerializer
@@ -20,7 +20,7 @@ class NhomThiCongView(viewsets.ModelViewSet):
     queryset = NhomThiCong.objects.all()
     lookup_field = "manhomthicong"
 
-class ListUserView(viewsets.GenericViewSet, ListAPIView):
+class ListUserView(viewsets.GenericViewSet, ListAPIView, CreateAPIView):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = UserCreationSerializer
     queryset = User.objects.all()

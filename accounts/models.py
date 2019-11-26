@@ -70,6 +70,13 @@ class NhomThiCong(models.Model):
     def __str__(self):
         return self.tennhomthicong
 
+class Quyennguoidung(models.Model):
+    maquyen = models.IntegerField(primary_key=True)
+    quyennguoidung = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.quyennguoidung
+
 class MyUser(AbstractBaseUser):
     username = models.CharField(
                     max_length=300,
@@ -102,6 +109,7 @@ class MyUser(AbstractBaseUser):
     duongdanavatar = models.FileField(upload_to='avatar', blank=True, null=True)
     phone = models.CharField(max_length=10, null=True)
     nhomthicong = models.ForeignKey(NhomThiCong, on_delete=models.DO_NOTHING, related_name="thanhviennhomthicong", null=True, blank=True)
+    quyen = models.ForeignKey(Quyennguoidung, on_delete=models.CASCADE, related_name="quyen", null=True, blank=True)
 
     objects = MyUserManager()
 
@@ -155,15 +163,8 @@ class ChiTietThiCong(models.Model):
     def __str__(self):
         return self.lichthicong
 
-class Quyennguoidung(models.Model):
-    maquyen = models.AutoField(primary_key=True)
-    quyennguoidung = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.quyennguoidung
-
 class Chucnang(models.Model):
-    machucnang = models.AutoField(primary_key=True)
+    machucnang = models.IntegerField(primary_key=True)
     chucnang = models.CharField(max_length=100)
 
     def __str__(self):
@@ -171,8 +172,8 @@ class Chucnang(models.Model):
 
 class Chucnangnguoidung(models.Model):
     machucnangnguoidung = models.AutoField(primary_key=True)
-    maquyen = models.ForeignKey(Quyennguoidung, on_delete=models.CASCADE, related_name="quyen_nguoi_dung")
-    machucnang = models.ForeignKey(Chucnang, on_delete=models.CASCADE, related_name="chuc_nang_nguoi_dung")
+    maquyen = models.ForeignKey(Quyennguoidung, on_delete=models.CASCADE, related_name="quyen_nguoi_dung", null=True, blank=True)
+    machucnang = models.ForeignKey(Chucnang, on_delete=models.CASCADE, related_name="chuc_nang_nguoi_dung", null=True, blank=True)
     xem = models.CharField(max_length=100, null=True, blank=True, default="1.0")
     them = models.CharField(max_length=100, null=True, blank=True, default="1.0")
     sua = models.CharField(max_length=100, null=True, blank=True, default="1.0")
