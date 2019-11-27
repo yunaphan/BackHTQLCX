@@ -7,4 +7,4 @@ from rest_framework import permissions
 class TrangThaiCayXanhView(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = TrangThaiCXSeria
-    queryset = Trangthaicx.objects.using('DoThi').all()
+    queryset = Trangthaicx.objects.all()

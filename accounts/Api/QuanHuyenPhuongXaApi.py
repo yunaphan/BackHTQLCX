@@ -7,7 +7,7 @@ from rest_framework import permissions
 class QuanHuyenView(viewsets.GenericViewSet, generics.ListAPIView):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = QuanHuyenSeria
-    queryset = Quanhuyen.objects.using('DoThi').values('objectid', 'maquanhuyen',
+    queryset = Quanhuyen.objects.values('objectid', 'maquanhuyen',
                                                        'tenquanhuyen', 'matinh',
                                                        'loai', 'tenkhongdau')
 

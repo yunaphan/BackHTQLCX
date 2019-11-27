@@ -7,4 +7,4 @@ from rest_framework import permissions
 class DuongView(viewsets.GenericViewSet, generics.ListAPIView):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = DuongSeria
-    queryset = Timduong.objects.using('DoThi').values('objectid', 'maduong', 'tenduong')
+    queryset = Timduong.objects.values('objectid', 'maduong', 'tenduong')

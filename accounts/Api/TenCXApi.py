@@ -7,4 +7,4 @@ from rest_framework import permissions
 class TenCXView(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = TenCXSeria
-    queryset = Tencx.objects.using('DoThi').all()
+    queryset = Tencx.objects.all()
