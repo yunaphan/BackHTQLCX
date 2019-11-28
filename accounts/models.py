@@ -6,6 +6,7 @@ from django.contrib.auth.models import (
 from accounts.Models.CayXanhModel import Cayxanh
 from accounts.Models.HinhThucThiCongModel import Hinhthucthicong
 from accounts.Models.TimDuongModel import Timduong
+from datetime import datetime
 from django.core.validators import RegexValidator
 
 USERNAME_REGEX = '^[a-zA-Z0-9.+-]*$'
@@ -140,24 +141,34 @@ class Trangthaitc(models.Model):
     def __str__(self):
         return self.trangthaitc
 
-class LichThiCong(models.Model):
-    malichthicong = models.AutoField(primary_key=True)
-    tenlichthicong = models.CharField(max_length=100)
-    NgayBD = models.DateField()
-    NgayHoanThanh = models.DateField()
-    hinhthucthicong = models.ForeignKey(Hinhthucthicong, related_name="lichthicong", on_delete=models.DO_NOTHING, null=True, blank=True)
-    trangthaitc = models.ForeignKey(Trangthaitc, related_name="trangthailichthicong", on_delete=models.DO_NOTHING, null=True, blank=True)
-    ghichu = models.CharField(max_length=255, null=True, blank=True)
+# class NgayThiCong(models.Model):
+#     mangaytc = models.AutoField(primary_key=True)
+#     NgayBD = models.DateField(auto_now=True)
+#     NgayHoanThanh = models.DateField(auto_now=True)
+#
+#     def __str__(self):
+#         return "%s - %s" % (self.NgayBD, self.NgayHoanThanh)
 
-    def __str__(self):
-        return self.tenlichthicong
+# class LichThiCong(models.Model):
+#     malichthicong = models.AutoField(primary_key=True)
+#     tenlichthicong = models.CharField(max_length=100)
+#     ghichu = models.CharField(max_length=255, null=True, blank=True)
+#
+#     def __str__(self):
+#         return self.tenlichthicong
 
 class ChiTietThiCong(models.Model):
     macttc = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     tuyenduong = models.CharField(max_length=100)
     nhomthiconglich = models.ForeignKey(NhomThiCong, related_name="nhomthiconglich", on_delete=models.DO_NOTHING, null=True, blank=True)
-    lichthicong = models.ForeignKey(LichThiCong, related_name="chitietlichthicong", on_delete=models.CASCADE)
+    lichthicong = models.CharField(max_length=100)
+    hinhthucthicong = models.ForeignKey(Hinhthucthicong, related_name="lichthicong", on_delete=models.DO_NOTHING,
+                                        null=True, blank=True)
+    trangthaitc = models.ForeignKey(Trangthaitc, related_name="trangthailichthicong", on_delete=models.DO_NOTHING,
+                                    null=True, blank=True)
     mota = models.CharField(max_length=255, null=True, blank=True)
+    NgayBD = models.DateField()
+    NgayHoanThanh = models.DateField()
     ngaycapnhat = models.DateField(auto_now_add=True)
 
     def __str__(self):

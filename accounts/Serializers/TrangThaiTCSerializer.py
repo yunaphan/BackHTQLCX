@@ -1,10 +1,10 @@
 from rest_framework import serializers
 from accounts import models
-from accounts.Serializers.LichThiCongSerializer import LichThiCongSerializer
+from accounts.Serializers.ChiTietLichThiCongSerializer import ChiTietLichThiCongSerializer
 class TrangThaiThiCongSerializer(serializers.ModelSerializer):
     matrangthaitc = serializers.IntegerField()
     trangthaitc = serializers.CharField(max_length=50, required=True)
-    trangthailichthicong = LichThiCongSerializer(many=True, read_only=True)
+    trangthailichthicong = ChiTietLichThiCongSerializer(many=True, read_only=True)
     ghichu = serializers.CharField(max_length=100, allow_null=True, allow_blank=True)
 
     class Meta:

@@ -29,7 +29,7 @@ router.register(r'danh-muc-phuong-xa', QuanHuyenPhuongXaApi.PhuongxaView, base_n
 router.register(r'danh-muc-tuyen-duong', DuongApi.DuongView, base_name='Danh mục tuyến đường')
 router.register(r'hinh-anh-cay', HinhAnhCayXanhApi.HinhAnhCayXanhView, base_name="Hình ảnh cây")
 router.register(r'danh-muc-trang-thai-thi-cong', TrangThaiTCApi.TrangThaiThiCongView, base_name='Trạng thái thi công')
-router.register(r'lich-thi-cong', LichThiCongApi.LichThiCongView, base_name="Lịch thi công")
+# router.register(r'lich-thi-cong', LichThiCongApi.LichThiCongView, base_name="Lịch thi công")
 router.register(r'chi-tiet-lich-thi-cong', ChiTietLichThiCongApi.ChiTietLichThiCongView, base_name="Chi tiết lịch thi công")
 router.register(r'nhom-thi-cong', NhomThiCongView, base_name="Nhóm thi công")
 router.register(r'chuc-nang', PhanQuyenApi.ChucNangView, base_name="Chức năng")

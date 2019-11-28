@@ -21,6 +21,7 @@ class InformationsByToken(APIView):
         for user in queryset:
             if user['key'] == get_token:
                 user_info = User.objects.values('id', 'username', 'gioitinh', 'ngaysinh', 'diachi',
-                                                'email', 'noti_token', 'is_admin',
-                                                'is_staff', 'is_active').get(id=user["user"])
+                                                'email', 'password', 'phone', 'firstname', 'middlename',
+                                                'lastname', 'duongdanavatar',
+                                                'is_active', 'nhomthicong', 'quyen').get(id=user["user"])
                 return response.Response(user_info)
