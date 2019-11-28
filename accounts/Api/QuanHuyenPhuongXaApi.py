@@ -14,6 +14,6 @@ class QuanHuyenView(viewsets.GenericViewSet, generics.ListAPIView):
 class PhuongxaView(viewsets.GenericViewSet, generics.ListAPIView):
     permission_classes = (permissions.IsAuthenticated, IsAdmin)
     serializer_class = PhuongXaSeria
-    queryset = Phuongxa.objects.using('DoThi').values('objectid', 'maquanhuyen',
+    queryset = Phuongxa.objects.values('objectid', 'maquanhuyen',
                                                       'maphuongxa', 'tenphuongxa',
                                                       'loai', 'tenkhongdau')
