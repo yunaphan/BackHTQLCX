@@ -11,4 +11,4 @@ class ChiTietLichThiCongView(viewsets.ModelViewSet):
     serializer_class = ChiTietLichThiCongSerializer
     lookup_field = "macttc"
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['tuyenduong', 'lichthicong']
+    filterset_fields = ['tuyenduong', 'lichthicong', 'NgayBD']
