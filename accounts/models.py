@@ -107,7 +107,7 @@ class MyUser(AbstractBaseUser):
     lastname = models.CharField(max_length=255, null=True)
     middlename = models.CharField(max_length=255, null=True)
     last_login = models.DateTimeField(blank=True, null=True)
-    duongdanavatar = models.FileField(upload_to='avatar', blank=True, null=True)
+    duongdanavatar = models.CharField(max_length=255, blank=True, null=True)
     phone = models.CharField(max_length=10, null=True)
     nhomthicong = models.ForeignKey(NhomThiCong, on_delete=models.DO_NOTHING, related_name="thanhviennhomthicong", null=True, blank=True)
     quyen = models.ForeignKey(Quyennguoidung, on_delete=models.CASCADE, related_name="quyen", null=True, blank=True)
