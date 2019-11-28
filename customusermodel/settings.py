@@ -28,7 +28,7 @@ SECRET_KEY = 'f$%bc2)x9_#s4(k$*_e=kb0##tl*%qxwj^w&p&9m3!e#!3%n5g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "113.161.225.252", "127.0.0.1", "192.168.1.8", ]
+ALLOWED_HOSTS = ["localhost", "113.161.225.252", "127.0.0.1", "192.168.1.8", 'tms-backend.vbgis.vn', 'htqlcx.firebaseapp.com']
 
 AUTH_USER_MODEL = 'accounts.MyUser'
 
