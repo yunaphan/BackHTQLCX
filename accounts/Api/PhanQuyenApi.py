@@ -8,14 +8,14 @@ class ChucNangView(viewsets.ModelViewSet):
     serializer_class = ChucNangSerializer
     lookup_field = "machucnang"
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['chucnang']
+    filterset_fields = ['machucnang']
 
 class QuyenNguoiDungView(viewsets.ModelViewSet):
     queryset = Quyennguoidung.objects.all()
     serializer_class = QuyenNguoiDungSerializer
     lookup_field = "maquyen"
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['quyennguoidung']
+    filterset_fields = ['maquyen']
 
 class ChucNangNguoiDungView(viewsets.ModelViewSet):
     queryset = Chucnangnguoidung.objects.all()
