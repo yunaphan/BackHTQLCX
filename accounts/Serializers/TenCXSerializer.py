@@ -10,7 +10,7 @@ class TenCXSeria(serializers.ModelSerializer):
         fields = ('matencx', 'tencx')
 
     def create(self, validated_data):
-        return Tencx.objects.using('DoThi').create(**validated_data)
+        return Tencx.objects.create(**validated_data)
 
     def update(self, instance, validated_data):
         instance.matencx = validated_data.get('matencx', instance.matencx)

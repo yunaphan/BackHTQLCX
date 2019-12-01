@@ -11,7 +11,7 @@ class TrangThaiCXSeria(serializers.ModelSerializer):
         fields = ('matinhtrang', 'tinhtrang', 'ghichu')
 
     def create(self, validated_data):
-        return Trangthaicx.objects.using('DoThi').create(**validated_data)
+        return Trangthaicx.objects.create(**validated_data)
 
     def update(self, instance, validated_data):
         instance.matinhtrang = validated_data.get('MaTinhTrang', instance.matinhtrang)
