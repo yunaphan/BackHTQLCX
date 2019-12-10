@@ -61,3 +61,9 @@ class TokenSerializer(serializers.ModelSerializer):
     class Meta:
         model = Token
         fields = ("user", "auth_token", "created")
+
+# class CayXanhTTSerializer(serializers.ModelSerializer):
+#
+#     class Meta:
+#         model = TINHTRANG_CAYXANH
+#         fields = ('objectid_id', 'matinhtrang_id')

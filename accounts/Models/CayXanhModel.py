@@ -1,4 +1,4 @@
-from accounts.Models.TenCXModel import Tencx
+from accounts.Models.TrangThaiCXModel import Trangthaicx
 from django.db import models
 
 
@@ -17,6 +17,8 @@ class Cayxanh(models.Model):
     ghichu = models.CharField(db_column='GhiChu', max_length=50, blank=True, null=True)
     matinhtrang = models.IntegerField(db_column='MaTinhTrang', blank=True, null=True)
     tuyenduong = models.CharField(db_column='TuyenDuong', max_length=20, blank=True, null=True)
+    phuongxa = models.CharField(db_column='PhuongXa', max_length=50, blank=True, null=True)
+    quanhuyen = models.CharField(db_column='QuanHuyen', max_length=50, blank=True, null=True)
     shape = models.TextField(db_column='Shape', blank=True, null=True)
     nvks_x = models.DecimalField(db_column='NVKS_X', max_digits=38, decimal_places=8, blank=True, null=True)
     nvks_y = models.DecimalField(db_column='NVKS_Y', max_digits=38, decimal_places=8, blank=True, null=True)
@@ -28,4 +30,4 @@ class Cayxanh(models.Model):
         db_table = 'CAYXANH'
 
     def __str__(self):
-        return '%d: %s, %s' % (self.objectid, self.sohieu, self.matencx)
+        return '%d: %s' % (self.objectid, self.sohieu)

@@ -9,3 +9,6 @@ class Trangthaicx(models.Model):
     class Meta:
         managed = False
         db_table = 'TrangThaiCX'
+
+    def __str__(self):
+        return "%d: %s", (self.matinhtrang, self.tinhtrang)

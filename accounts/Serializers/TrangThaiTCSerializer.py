@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from accounts import models
 from accounts.Serializers.ChiTietLichThiCongSerializer import ChiTietLichThiCongSerializer
+
 class TrangThaiThiCongSerializer(serializers.ModelSerializer):
     matrangthaitc = serializers.IntegerField()
     trangthaitc = serializers.CharField(max_length=50, required=True)

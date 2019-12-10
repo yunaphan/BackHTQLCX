@@ -66,3 +66,7 @@ class Tokenuser(viewsets.GenericViewSet, ListCreateAPIView):
     serializer_class = serializers.TokenSerializer
     queryset = Token.objects.all()
 
+# class TTCXView(viewsets.ModelViewSet):
+#     permission_classes = (permissions.IsAuthenticated, IsAdmin)
+#     serializer_class = serializers.CayXanhTTSerializer
+#     queryset = TINHTRANG_CAYXANH.objects.all()

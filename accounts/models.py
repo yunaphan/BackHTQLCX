@@ -6,6 +6,7 @@ from django.contrib.auth.models import (
 from accounts.Models.CayXanhModel import Cayxanh
 from accounts.Models.HinhThucThiCongModel import Hinhthucthicong
 from accounts.Models.TimDuongModel import Timduong
+from accounts.Models.TrangThaiCXModel import Trangthaicx
 from datetime import datetime
 from django.core.validators import RegexValidator
 
@@ -169,7 +170,7 @@ class ChiTietThiCong(models.Model):
     mota = models.CharField(max_length=255, null=True, blank=True)
     NgayBD = models.DateField()
     NgayHoanThanh = models.DateField()
-    ngaycapnhat = models.DateField(auto_now_add=True)
+    ngaycapnhat = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.lichthicong
@@ -200,4 +201,8 @@ class Hinhanhcayxanh(models.Model):
     class Meta:
         managed = False
         db_table = 'HINHANHCAYXANH'
+#
+# class TINHTRANG_CAYXANH(models.Model):
+#     objectid = models.ForeignKey(Cayxanh, on_delete=models.CASCADE, related_name="objectid_cx_tt")
+#     matinhtrang = models.ForeignKey(Trangthaicx, on_delete=models.CASCADE, related_name="trang_thai_cx")
 
