@@ -11,6 +11,6 @@ django-token
 pycparser
 pyodbc
 pytz==2019.1
-setuptools==39.1.0
+setuptools==65.5.1
 six==1.12.0
 sqlparse
